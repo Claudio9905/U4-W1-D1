@@ -28,6 +28,7 @@ public class Ex_3 {
         double l3 = scanner.nextDouble();
 
         System.out.println("L'area del triangolo è uguale a: " + areaTriangolo(l1,l2,l3) + " cm");
+        scanner.close();
 
     }
 
