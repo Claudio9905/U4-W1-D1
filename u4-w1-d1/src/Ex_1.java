@@ -7,8 +7,7 @@ public class Ex_1 {
         int a = 25;
         int b = 20;
         String str = "Chiara";
-        String[] strVet = new String[5];
-        strVet = new String[]{"Claudio", "Chiara", "Daniele", "Marco", "Stefano"};
+        String[] strVet = new String[]{"Claudio", "Chiara", "Daniele", "Marco", "Stefano"};
         String str2 = "Luca";
 
         // 1
