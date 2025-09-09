@@ -12,7 +12,7 @@ public class Ex_1 {
 
         // 1
 
-        System.out.println("Il prodotto è uguale a: " + prodotto(a,b));
+        System.out.println("Il prodotto è uguale a: " + prodotto(a, b));
         System.out.println("\n");
 
 
@@ -23,29 +23,29 @@ public class Ex_1 {
 
 
         // 3
-        String[] strRes = inserisciInArray(strVet,str2);
+        String[] strRes = inserisciInArray(strVet, str2);
         System.out.println("La stringa risultante è: " + Arrays.toString(strRes));
 
     }
 
-    public static int prodotto(int num1, int num2){
-        return  num1*num2;
+    public static int prodotto(int num1, int num2) {
+        return num1 * num2;
     }
 
-    public static String concatStrInt (String str1, int num1 ){
-       return str1 + num1;
+    public static String concatStrInt(String str1, int num1) {
+        return str1 + num1;
     }
 
-    public static String[] inserisciInArray (String[] strVet, String str){
+    public static String[] inserisciInArray(String[] strVet, String str) {
         int startLenght = strVet.length;
-        int indiceCentrale = strVet.length/2;
+        int indiceCentrale = strVet.length / 2;
         String[] newStringVet = new String[strVet.length + 1];
 
-        System.arraycopy(strVet,0,newStringVet,0,indiceCentrale);
+        System.arraycopy(strVet, 0, newStringVet, 0, indiceCentrale);
         newStringVet[indiceCentrale] = str;
-        System.arraycopy(strVet, indiceCentrale, newStringVet, indiceCentrale+1, startLenght - indiceCentrale);
+        System.arraycopy(strVet, indiceCentrale, newStringVet, indiceCentrale + 1, startLenght - indiceCentrale);
 
 
-        return  newStringVet;
+        return newStringVet;
     }
 }
